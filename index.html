@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достопримечательности Омска</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #34495e;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #1abc9c;
+        }
+
+        section {
+            padding: 40px 10%;
+            background: white;
+            margin-bottom: 10px;
+            scroll-margin-top: 70px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2ce350;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #ecf0f1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Достопримечательности города Омска</h1>
+        <p>Информационный сайт о культурных объектах города</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#museum">Музеи</a></li>
+            <li><a href="#pamyatnik">Памятники</a></li>
+            <li><a href="#chram">Храмы</a></li>
+            <li><a href="#park">Парки</a></li>
+            <li><a href="#map">Карта</a></li>
+        </ul>
+    </nav>
+
+    <section id="museum">
+        <h2>Музеи Омска</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="врубель.png">
+                <div class="card-content">
+                    <h3>Омский областной музей изобразительного искусства имени М. А. Врубеля</h3>
+                    <p>Основан в 1924 г., имеет более 30 тыс. экспонатов.<br>Адреса: ул. Ленина, 3 (Врубелевский корпус),<br>ул. Ленина, 23 (Генерал-губернаторский дворец), ул. Музейная, 4 (Центр "Эрмитаж-Сибирь").</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="краеведческий.png">
+                <div class="card-content">
+                    <h3>Омский историко-краеведческий музей</h3>
+                    <p>Основан в 1878 г. В фондах хранится свыше 235 тыс. предметов, освещающих историю, природу Омского Прииртышья. Адрес: ул. Ленина, 23А.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="омская_крепость.png">
+                <div class="card-content">
+                    <h3>Исторический комплекс "Омская крепость"</h3>
+                    <p>Это реконструированная часть второй омской крепости XVIII века. Первая крепость заложена в 1716 г., вторая (каменная, чьи здания сохранились) в 1765 г.<br>Сегодня это музей под открытым небом, вкючающий восстановленные Тобольские и Тарские ворота, денежную кладовую, арсенал и кухню.<br>Адрес: ул. Партизанская, 5А.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pamyatnik">
+        <h2>Памятники Омска</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="степаныч.png">
+                <div class="card-content">
+                    <h3>Памятник сантехнику Степанычу</h3>
+                    <p>Установлен в 1998 г. к Дню города на улице Ленина. Символ города, созданный скульпторами И. Вахитовым и С. Норышевым.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="люба.png">
+                <div class="card-content">
+                    <h3>Статуя "Люба"</h3>
+                    <p>Установлена в 1999 г. на улице Ленина. Бронзовая девушка, сидящая с книгой на скамейке, посвящена Любови Гасфорд, жене генерал-губернатора Сибири XIX в.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="каланча.png">
+                <div class="card-content">
+                    <h3>Пожарная каланча</h3>
+                    <p>Архитектурный символ города и памятник культурного наследия, построенный в 1915 г. по проекту И. Г. Хворинова. Башня использовалась для наблюдения до 1940-х годов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chram">
+        <h2>Религиозные объекты Омска</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="успенский_собор.png">
+                <div class="card-content">
+                    <h3>Успенский кафедральный собор</h3>
+                    <p>Главный православный храм Омска, восстановлен в 2007 г. на месте взорванного в 1935 г. собора XIX века.<br>Адрес: ул. Тарская, 7.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="христорождественский.png">
+                <div class="card-content">
+                    <h3>Христорождественский собор</h3>
+                    <p>Собор славится 42-метровой колокольней и развитой социальной структурой, включая воскресные школы, хор и гимназию. Освящен в 1999 г. к 2000-летию Рождества Христова.<br>Адрес: ул. Степанца, 5.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="всех_святых.png">
+                <div class="card-content">
+                    <h3>Храм Всех Святых</h3>
+                    <p>Построен в стиле самобытного русского деревянного зодчества на месте бывшего погоста, освящен в 2007 г., в 2009 г. пережил поджог, но уцелел.<br>Адрес: ул. Куйбышева, 75 к1.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="park">
+        <h2>Парки Омска</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="30_летВЛКСМ.png">
+                <div class="card-content">
+                    <h3>Парк им. 30-летия ВЛКСМ</h3>
+                    <p>Старейший парк города, открыт в 1940 г. Имеет большую площадь, аттракционы и озеро.<br>Адрес: ул. Масленникова, 136.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="птичья_гавань.png">
+                <div class="card-content">
+                    <h3>Птичья гавань</h3>
+                    <p>Природный парк и особо охраняемая территория регионального значения. Это место миграции и гнездования более 155 видов птиц, с водоемами и развитой инфраструктурой для прогулок.<br>Адрес: ул. Енисейская, 1 к2.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="советский.png">
+                <div class="card-content">
+                    <h3>Советский парк</h3>
+                    <p>Крупная зона отдыха на высоком берегу Иртыша. Имеет веревочный парк и лыжероллерную трассу. Зимой функционируют каток и горки.<br>Адрес: ул. Андрианова, 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <h2>Карта</h2>
+        <div class="map-container">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af40e3960964087eeb66857dbf90b157dbc4a26adb6a5fd07885e8ea6aa328288&amp;source=constructor" width="1097" height="688" frameborder="0"></iframe>
+        </div>
+    </section>
+
+<script>
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault()
+            document.querySelector(this.getAttribute('href'))
+                .scrollIntoView({behavior: 'smooth'})
+        })
+    })
+</script>
+</body>
+</html>
