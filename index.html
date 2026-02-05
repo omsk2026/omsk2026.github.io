@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
+            overflow-x: hidden;
         }
 
         header {
@@ -24,6 +25,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            overflow-x: hidden;
         }
 
         nav ul {
@@ -33,6 +35,10 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 0 10px;
+            box-sizing: border-box;
         }
 
         nav li {
@@ -118,6 +124,12 @@
             color: white;
             text-align: center;
             padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                justify-content: flex-start;
+            }
         }
     </style>
 </head>
